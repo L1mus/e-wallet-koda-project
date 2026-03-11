@@ -1,0 +1,99 @@
+/* Regular */
+@font-face {
+  font-family: "MontserratLocal";
+  src:
+    local("MontserratLocal"),
+    url(../assets/fonts/Montserrat-Regular.ttf) format("opentype");
+  font-weight: 100 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "MontserratLocal";
+  src:
+    local("MontserratLocal"),
+    url(../assets/fonts/Montserrat-Bold.ttf) format("opentype");
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NunitoSans */
+@font-face {
+  font-family: "NunitoSansLocal";
+  src:
+    local("NunitoSansLocal"),
+    url(../assets/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf)
+      format("opentype");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ff-montserrat: "MontserratLocal", sans-serif;
+  --ff-nunitosans: "NunitoSansLocal", sans-serif;
+  --fs-title: 20px;
+  --lh-title: 100%;
+  --ls-title: 0%;
+  --fs-base: 16px;
+  --lh-base: 166%;
+  --ls-base: 0%;
+  --fs-heading-1: 30px;
+  --lh-heading-1: 100%;
+  --ls-heading-1: 0%;
+  --fs-placeholder-v1: 12px;
+  --lh-placeholder-v1: 100%;
+  --ls-placeholder-v1: 0.75px;
+  --fs-placeholder-v2: 14px;
+  --lh-placeholder-v2: 20px;
+  --ls-placeholder-v2: 0%;
+  --clr-primary-v1: #3969fd;
+  --clr-secondary: #ffffff;
+  --clr-primary-v2: radial-gradient(circle, #3868fdde, #7b9bff00);
+  --clr-font-blue: #2948ff;
+  --clr-font-white: #ffffff;
+  --clr-font-grey: #4f5665;
+  --clr-font-black: #0b132a;
+  --clr-font-red: #d00000;
+}
+
+.title {
+  font-size: var(--fs-title);
+  line-height: var(--lh-title);
+  letter-spacing: var(--ls-title);
+  color: var(--clr-font-blue);
+}
+.heading-1 {
+  font-size: var(--fs-heading-1);
+  line-height: var(--lh-heading-1);
+  letter-spacing: var(--ls-heading-1);
+  color: var(--clr-font-black);
+}
+
+.base {
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  letter-spacing: var(--ls-base);
+  color: var(--clr-font-grey);
+}
+
+.placeholder-v1 {
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-placeholder-v1);
+  line-height: var(--lh-placeholder-v1);
+  letter-spacing: var(--ls-placeholder-v1);
+  font-weight: 400;
+  color: var(--clr-font-grey);
+}
+
+.placeholder-v2 {
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-placeholder-v2);
+  line-height: var(--lh-placeholder-v2);
+  letter-spacing: var(--ls-placeholder-v2);
+  font-weight: 500;
+  color: var(--clr-font-grey);
+}
