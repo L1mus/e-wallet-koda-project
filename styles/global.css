@@ -97,3 +97,15 @@
   font-weight: 500;
   color: var(--clr-font-grey);
 }
+
+.label-input-auth {
+  font-weight: 500;
+}
+
+.container-input-auth {
+  width: 562px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #fcfdfe;
+  padding: 14px 13px;
+}
