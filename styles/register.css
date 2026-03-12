@@ -1,0 +1,54 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  gap: 15px;
+}
+
+p {
+  font-weight: 400;
+  color: #4f5665;
+  text-align: left;
+}
+
+main > p:last-child {
+  font-weight: 400;
+  color: #4f5665;
+  text-align: center;
+}
+
+.btn-register {
+  width: 562px;
+  height: 51px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.5%;
+  text-align: center;
+}
+
+.btn-sizing {
+  width: 562px;
+  height: 50px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.text-login > a {
+  color: blue;
+  text-decoration: none;
+}
