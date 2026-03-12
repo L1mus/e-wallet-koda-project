@@ -9,22 +9,11 @@
   font-display: swap;
 }
 
-/* Bold */
-@font-face {
-  font-family: "MontserratLocal";
-  src:
-    local("MontserratLocal"),
-    url(../assets/fonts/Montserrat-Bold.ttf) format("opentype");
-  font-weight: 500 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* NunitoSans */
 @font-face {
-  font-family: "NunitoSansLocal";
+  font-family: "NunitoSans";
   src:
-    local("NunitoSansLocal"),
+    local("NunitoSans"),
     url(../assets/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf)
       format("opentype");
   font-weight: 100 700;
@@ -33,8 +22,8 @@
 }
 
 :root {
-  --ff-montserrat: "MontserratLocal", sans-serif;
-  --ff-nunitosans: "NunitoSansLocal", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-nunitosans: "NunitoSans", sans-serif;
   --fs-title: 20px;
   --lh-title: 100%;
   --ls-title: 0%;
@@ -52,12 +41,20 @@
   --ls-placeholder-v2: 0%;
   --clr-primary-v1: #3969fd;
   --clr-secondary: #ffffff;
-  --clr-primary-v2: radial-gradient(circle, #3868fdde, #7b9bff00);
+  --clr-primary-v2: radial-gradient(circle, #7b9bff00 0%, #3868fdde 87%);
   --clr-font-blue: #2948ff;
   --clr-font-white: #ffffff;
   --clr-font-grey: #4f5665;
   --clr-font-black: #0b132a;
   --clr-font-red: #d00000;
+}
+
+body {
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  letter-spacing: var(--ls-base);
+  font-weight: 400;
 }
 
 .title {
@@ -98,14 +95,62 @@
   color: var(--clr-font-grey);
 }
 
+.container-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .label-input-auth {
+  font-family: var(--ff-montserrat);
   font-weight: 500;
 }
 
 .container-input-auth {
-  width: 562px;
-  height: 44px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  width: 537px;
+  height: 15px;
   border-radius: 8px;
-  border: 1px solid #fcfdfe;
   padding: 14px 13px;
+  border: 1px solid var(--clr-font-grey);
+}
+
+.container-input-auth:focus {
+  border-color: var(--clr-font-black);
+}
+
+.input-auth {
+  width: 484px;
+  height: 20px;
+  border: none;
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-placeholder-v1);
+  line-height: var(--lh-placeholder-v1);
+  letter-spacing: var(--ls-placeholder-v1);
+  font-weight: 400;
+  color: var(--clr-font-grey);
+  padding: 0;
+}
+
+.input-auth:active {
+  border: none;
+}
+
+.input-auth:focus-visible {
+  outline: none;
+}
+
+.btn-blue {
+  background-color: var(--clr-font-blue);
+  color: var(--clr-font-white);
+  border: none;
+}
+
+.btn-white {
+  background-color: var(--clr-font-white);
+  color: var(--clr-font-blue);
+  border: none;
 }
