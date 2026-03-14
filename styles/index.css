@@ -42,7 +42,6 @@ header {
   justify-content: center;
   align-items: center;
   padding: clamp(48px, 7vw, 105px) clamp(24px, 9vw, 130px);
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
@@ -99,7 +98,6 @@ header {
   align-items: center;
   padding: 0px 130px 0px 130px;
   background-color: #e8e8e84d;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   height: 80px;
@@ -111,7 +109,6 @@ header {
   align-items: center;
   padding: clamp(48px, 7vw, 105px) 30px;
   gap: 20px;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
@@ -177,7 +174,6 @@ header {
   align-items: center;
   padding: clamp(48px, 7vw, 105px) clamp(24px, 9vw, 130px);
   gap: 100px;
-  max-width: 1440px;
 }
 .feature > picture {
   width: 278px;
@@ -251,7 +247,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 80px;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: clamp(48px, 5vw, 80px) 24px;
@@ -379,7 +374,6 @@ header {
 }
 
 footer {
-  max-width: 1440px;
   height: auto;
   display: flex;
   flex-direction: column;
