@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/layout-dashboard.css" />
+    <link rel="stylesheet" href="../../styles/edit-profile.css" />
+  </head>
+  <body>
+    <header class="header-dekstop">
+      <div>
+        <div class="title">
+          <img src="../../assets/icons/logo.svg" alt="" />
+          <span>E-Wallet</span>
+        </div>
+      </div>
+      <div class="container-profile-dropdown">
+        <div class="profile-container">
+          <h1 class="username">Ghaluh Wizard</h1>
+          <div class="avatar-image">
+            <img src="../../assets/images/dummy-profile-picture.png" />
+          </div>
+        </div>
+        <button class="btn-dropdown">
+          <img src="../../assets/icons/arrow-dropdown.svg" />
+        </button>
+      </div>
+    </header>
+
+    <div class="header-mobile">
+      <div class="avatar-image">
+        <img src="../../assets/images/dummy-profile-picture.png" />
+      </div>
+      <div>
+        <p>Hello,</p>
+        <h1 class="username">Ghaluh Wizard</h1>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <nav class="navigation-bar">
+        <ul>
+          <li class="nav-item">
+            <img src="../../assets/icons/dashboard-two.svg" alt="" />
+            <span>Dashboard</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/Send.svg" alt="" />
+            <span>Transfer</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/history.svg" alt="" />
+            <span>History</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/Upload.svg" alt="" />
+            <span>Top Up</span>
+          </li>
+          <li class="nav-item active">
+            <img src="../../assets/icons/2 User.svg" alt="" />
+            <span>Profile</span>
+          </li>
+          <li class="nav-item logout">
+            <img src="../../assets/icons/Log Out.svg" alt="" />
+            <span>Log out</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="profile-wrapper">
+        <div class="profile-page-title">
+          <img src="../../assets/icons/2 Use-blue.svg" />
+          <h2>Profile</h2>
+        </div>
+
+        <div class="card-profile-form">
+          <div class="profile-section">
+            <h3 class="section-title">Profile Picture</h3>
+            <div class="profile-picture-row">
+              <div class="profile-picture-preview">
+                <img src="../../assets/icons/User-2.svg" />
+              </div>
+              <div class="profile-picture-actions">
+                <button type="button" class="btn-blue btn-change-profile">
+                  <img src="../../assets/icons/Edit Square.svg" />
+                  Change Profile
+                </button>
+                <button type="button" class="btn-delete-profile">
+                  <img src="../../assets/icons/trash.svg" />
+                  Delete Profile
+                </button>
+              </div>
+            </div>
+            <p class="profile-picture-note">
+              The profile picture must be 512 x 512 pixels or less
+            </p>
+          </div>
+
+          <div class="profile-section">
+            <label class="section-title" for="profile-fullname"
+              >Full Name</label
+            >
+            <div class="container-input-auth">
+              <img src="../../assets/icons/User-2-small.svg" />
+              <input
+                id="profile-fullname"
+                class="input-auth"
+                type="text"
+                placeholder="Enter Full Name"
+              />
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <label class="section-title" for="profile-phone">Phone</label>
+            <div class="container-input-auth">
+              <img src="../../assets/icons/Phone.svg" />
+              <input
+                id="profile-phone"
+                class="input-auth"
+                type="tel"
+                placeholder="Enter Your Number Phone"
+              />
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <label class="section-title" for="profile-email">Email</label>
+            <div class="container-input-auth">
+              <img src="../../assets/icons/mail.svg" />
+              <input
+                id="profile-email"
+                class="input-auth"
+                type="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <h3 class="section-title">Password</h3>
+            <a href="./change-password.html" class="link-change"
+              >Change Password</a
+            >
+          </div>
+
+          <div class="profile-section">
+            <h3 class="section-title">Pin</h3>
+            <a href="./change-pin.html" class="link-change">Change Pin</a>
+          </div>
+
+          <button type="button" class="btn-blue btn-submit-profile">
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
