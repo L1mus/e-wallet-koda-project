@@ -1,10 +1,11 @@
 body {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 45fr 55f;
   height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
+  background-color: #3868fd;
 }
 
 .left-side {
@@ -13,10 +14,14 @@ body {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   z-index: 2;
-  padding: 126px 79px 126px 69px;
+  padding: clamp(40px, 8vw, 126px) clamp(24px, 5vw, 79px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
+  background-color: #ffffff;
+  box-shadow: 8px 0 32px rgba(0, 0, 0, 0.18);
+  overflow-y: auto;
 }
 
 .right-side {
@@ -24,6 +29,10 @@ body {
   grid-row: 1;
   background: radial-gradient(circle, #7b9bff00 0%, #3868fdde 87%);
   background-color: #3868fdde;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 header {
@@ -53,22 +62,26 @@ main {
 .container-input-pin input {
   border: none;
   outline: none;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
   width: 66px;
+  flex: 1;
   text-align: center;
   font-size: 30px;
+  color: #0b132a;
+  padding-bottom: 8px;
+  background: transparent;
+  transition: border-color 0.2s ease;
 }
 
 .container-input-pin input:focus-visible {
   outline: none;
-  border-bottom: 1px solid #2948ff;
+  border-bottom: 2px solid #2948ff;
 }
 
 p {
   font-weight: 400;
   color: #4f5665;
   text-align: left;
-  margin-bottom: 56px;
 }
 
 main > p:last-child {
@@ -78,7 +91,7 @@ main > p:last-child {
 }
 
 .btn-register {
-  width: 562px;
+  width: 100%;
   height: 51px;
   border: 1px solid #e8e8e8;
   display: flex;
@@ -92,16 +105,31 @@ main > p:last-child {
   line-height: 100%;
   letter-spacing: 0.5%;
   text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .btn-sizing {
-  width: 562px;
+  width: 100%;
   height: 50px;
   border-radius: 6px;
   padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-sizing:hover {
+  opacity: 0.9;
 }
 
 .text-reset > a {
   color: blue;
   text-decoration: none;
+}
+
+.text-reset > a:hover {
+  text-decoration: underline;
 }
