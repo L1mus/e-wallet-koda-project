@@ -11,19 +11,19 @@
     <div class="left-side">
       <header>
         <img src="../../assets/icons/logo.svg" alt="Logo" />
-        <h1 class="title">E-Wallet</h1>
+        <span class="title">E-Wallet</span>
       </header>
       <main>
         <h1 class="heading-1">Hello Welcome Back 👋</h1>
         <p>Fill out the form correctly or you can login with several option.</p>
         <div class="container-btn-oauth">
-          <button class="btn-register">
+          <button type="button" class="btn-register">
             <img
               src="../../assets/icons/icon-google.svg "
               alt="icon Facebook"
             />Sign In With Google
           </button>
-          <button class="btn-register">
+          <button type="button" class="btn-register">
             <img
               src="../../assets/icons/icon-facebook.svg"
               alt="icon Facebook"
@@ -32,29 +32,41 @@
         </div>
         <form class="form-layout" action="">
           <div class="container-auth">
-            <label class="label-input-auth base" for="">Email</label>
+            <label class="label-input-auth base" for="login-email">Email</label>
             <div class="container-input-auth">
               <img src="../../assets/icons/mail.svg" alt="icon email" />
               <input
+                id="login-email"
                 class="input-auth"
                 type="email"
                 placeholder="Enter Your Email"
+                required
               />
             </div>
           </div>
           <div class="container-auth">
-            <label class="label-input-auth base" for="">Password</label>
+            <label class="label-input-auth base" for="login-password"
+              >Password</label
+            >
             <div class="container-input-auth">
-              <img src="../../assets/icons/password.svg" alt="icon email" />
+              <img
+                src="../../assets/icons/password.svg"
+                alt="toggle password visible"
+              />
               <input
+                id="login-password"
                 class="input-auth"
                 type="password"
                 placeholder="Enter Your Password"
+                required
               />
-              <img src="../../assets/icons/eye-off.svg" alt="icon eyeoff" />
+              <img
+                src="../../assets/icons/eye-off.svg"
+                alt="toggle password visible"
+              />
             </div>
           </div>
-          <button class="btn-blue btn-sizing">Login</button>
+          <button type="submit" class="btn-blue btn-sizing">Login</button>
         </form>
         <p>
           Have An Account?
