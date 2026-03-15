@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Up</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/layout-dashboard.css" />
+    <link rel="stylesheet" href="../../styles/top-up.css" />
+  </head>
+  <body>
+    <header class="header-dekstop">
+      <div>
+        <div class="title">
+          <img src="../../assets/icons/logo.svg" alt="" />
+          <span>E-Wallet</span>
+        </div>
+      </div>
+      <div class="container-profile-dropdown">
+        <div class="profile-container">
+          <h1 class="username">Ghaluh Wizard</h1>
+          <div class="avatar-image">
+            <img src="../../assets/images/dummy-profile-picture.png" />
+          </div>
+        </div>
+        <button class="btn-dropdown">
+          <img src="../../assets/icons/arrow-dropdown.svg" />
+        </button>
+      </div>
+    </header>
+
+    <div class="header-mobile">
+      <div class="avatar-image">
+        <img src="../../assets/images/dummy-profile-picture.png" />
+      </div>
+      <div>
+        <p>Hello,</p>
+        <h1 class="username">Ghaluh Wizard</h1>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <nav class="navigation-bar">
+        <ul>
+          <li class="nav-item">
+            <img src="../../assets/icons/dashboard-two.svg" alt="" />
+            <span>Dashboard</span>
+          </li>
+          <li class="nav-item active">
+            <img src="../../assets/icons/Send.svg" alt="" />
+            <span>Transfer</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/history.svg" alt="" />
+            <span>History</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/Upload.svg" alt="" />
+            <span>Top Up</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/2 User.svg" alt="" />
+            <span>Profile</span>
+          </li>
+          <li class="nav-item logout">
+            <img src="../../assets/icons/Log Out.svg" alt="" />
+            <span>Log out</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="topup-wrapper">
+        <div class="topup-page-title">
+          <img src="../../assets/icons/Upload.svg" />
+          <h2>Top Up Account</h2>
+        </div>
+
+        <div class="topup-content">
+          <div class="card-topup-form">
+            <div class="topup-section">
+              <h3 class="section-title">Account Information</h3>
+              <div class="user-item">
+                <div class="user-avatar">
+                  <img src="../../assets/images/dummy-profile-picture.png" />
+                </div>
+                <div class="user-info">
+                  <h3 class="user-name">Ghaluh Wizard</h3>
+                  <p class="user-phone">(239) 555-0108</p>
+                  <span class="badge-verified">
+                    <img src="../../assets/icons/verified.svg" />
+                    Verified
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="topup-section">
+              <h3 class="section-title">Amount</h3>
+              <p class="section-desc">
+                Type the amount you want to transfer to your e-wallet account
+              </p>
+              <div class="container-input-auth">
+                <img src="../../assets/icons/u_money-bill.svg" />
+                <input
+                  class="input-auth"
+                  type="number"
+                  placeholder="Enter Nominal Transfer"
+                  min="0"
+                />
+              </div>
+            </div>
+
+            <div class="topup-section">
+              <h3 class="section-title">Payment Method</h3>
+              <p class="section-desc">
+                Choose your payment method for top up account
+              </p>
+              <ul class="payment-method-list">
+                <li class="payment-method-item">
+                  <label class="payment-method-label">
+                    <input
+                      type="radio"
+                      name="payment-method"
+                      value="bri"
+                      checked
+                    />
+                    <div class="payment-method-logo">
+                      <img src="../../assets/icons/bank-bri.svg" />
+                    </div>
+                    <span class="payment-method-name"
+                      >Bank Rakyat Indonesia</span
+                    >
+                  </label>
+                </li>
+
+                <li class="payment-method-item">
+                  <label class="payment-method-label">
+                    <input type="radio" name="payment-method" value="dana" />
+                    <div class="payment-method-logo">
+                      <img src="../../assets/icons/dana.svg" />
+                    </div>
+                    <span class="payment-method-name">Dana</span>
+                  </label>
+                </li>
+
+                <li class="payment-method-item">
+                  <label class="payment-method-label">
+                    <input type="radio" name="payment-method" value="bca" />
+                    <div class="payment-method-logo">
+                      <img src="../../assets/icons/bank-bca.svg" />
+                    </div>
+                    <span class="payment-method-name">Bank Central Asia</span>
+                  </label>
+                </li>
+
+                <li class="payment-method-item">
+                  <label class="payment-method-label">
+                    <input type="radio" name="payment-method" value="gopay" />
+                    <div class="payment-method-logo">
+                      <img src="../../assets/icons/gopay.svg" />
+                    </div>
+                    <span class="payment-method-name">Gopay</span>
+                  </label>
+                </li>
+
+                <li class="payment-method-item">
+                  <label class="payment-method-label">
+                    <input type="radio" name="payment-method" value="ovo" />
+                    <div class="payment-method-logo">
+                      <img src="../../assets/icons/ovo.svg" />
+                    </div>
+                    <span class="payment-method-name">Ovo</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-payment-summary mobile-only">
+              <h3 class="section-title">Payment</h3>
+              <ul class="summary-list">
+                <li class="summary-item">
+                  <span class="summary-label">Order</span>
+                  <span class="summary-value">Rp. 40.000</span>
+                </li>
+                <li class="summary-item">
+                  <span class="summary-label">Delivery</span>
+                  <span class="summary-value">Rp. 0</span>
+                </li>
+                <li class="summary-item">
+                  <span class="summary-label">Tax</span>
+                  <span class="summary-value">Rp. 4000</span>
+                </li>
+                <li class="summary-item subtotal">
+                  <span class="summary-label">Sub Total</span>
+                  <span class="summary-value">Rp.44.000</span>
+                </li>
+              </ul>
+              <button type="button" class="btn-blue btn-submit-topup">
+                Submit
+              </button>
+              <p class="summary-note">
+                *Get Discount if you pay with Bank Central Asia
+              </p>
+            </div>
+          </div>
+
+          <div class="card-payment-summary desktop-only">
+            <h3 class="section-title">Payment</h3>
+            <ul class="summary-list">
+              <li class="summary-item">
+                <span class="summary-label">Order</span>
+                <span class="summary-value">Idr. 40.000</span>
+              </li>
+              <li class="summary-item">
+                <span class="summary-label">Delivery</span>
+                <span class="summary-value">Idr. 0</span>
+              </li>
+              <li class="summary-item">
+                <span class="summary-label">Tax</span>
+                <span class="summary-value">Idr. 4000</span>
+              </li>
+              <li class="summary-item subtotal">
+                <span class="summary-label">Sub Total</span>
+                <span class="summary-value">Idr.44.000</span>
+              </li>
+            </ul>
+            <button type="button" class="btn-blue btn-submit-topup">
+              Submit
+            </button>
+            <p class="summary-note">
+              *Get Discount if you pay with Bank Central Asia
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
