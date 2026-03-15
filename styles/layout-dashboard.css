@@ -1,6 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   grid-template-areas:
     "header-mobile"
@@ -20,6 +21,7 @@ body {
   font-weight: 400;
   display: flex;
   align-items: center;
+  height: auto;
   gap: 10px;
   padding: 20px;
   p {
@@ -217,12 +219,12 @@ main {
           gap: 16px;
           border-radius: 8px;
           margin: 0 12px;
-          .active {
-            background-color: #2948ff;
+        }
+        .active {
+          background-color: #2948ff;
+          color: #ffffff;
+          &:hover {
             color: #ffffff;
-            &:hover {
-              color: #ffffff;
-            }
           }
         }
       }
