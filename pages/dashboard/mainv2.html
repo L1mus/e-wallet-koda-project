@@ -4,6 +4,230 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/layout-dashboard.css" />
+    <link rel="stylesheet" href="../../styles/dashboardv2.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header-dekstop">
+      <div>
+        <div class="title">
+          <img src="../../assets/icons/logo.svg" />
+          <span>E-Wallet</span>
+        </div>
+      </div>
+      <div class="container-profile-dropdown">
+        <div class="profile-container">
+          <h1 class="username">Ghaluh Wizard</h1>
+          <div class="avatar-image">
+            <img src="../../assets/images/dummy-profile-picture.png" />
+          </div>
+        </div>
+        <button class="btn-dropdown">
+          <img src="../../assets/icons/arrow-dropdown.svg" />
+        </button>
+      </div>
+    </header>
+
+    <div class="header-mobile">
+      <div class="avatar-image">
+        <img src="../../assets/images/dummy-profile-picture.png" />
+      </div>
+      <div>
+        <p>Hello,</p>
+        <h1 class="username">Ghaluh Wizard</h1>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <nav class="navigation-bar">
+        <ul>
+          <li class="nav-item active">
+            <img src="../../assets/icons/dashboard-two.svg" />
+            <span>Dashboard</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/Send.svg" />
+            <span>Transfer</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/history.svg" />
+            <span>History</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/Upload.svg" />
+            <span>Top Up</span>
+          </li>
+          <li class="nav-item">
+            <img src="../../assets/icons/2 User.svg" />
+            <span>Profile</span>
+          </li>
+          <li class="nav-item logout">
+            <img src="../../assets/icons/Log Out.svg" />
+            <span>Log out</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="section-top">
+        <div class="card-balance-v2">
+          <div class="top-card">
+            <img src="../../assets/icons/balance.svg" />
+            <p>Balance</p>
+          </div>
+          <p class="money">Rp.120.000</p>
+          <div class="balance-stats">
+            <div class="stat-item">
+              <p class="stat-label">Income</p>
+              <p class="stat-value positive">Rp.200.000</p>
+              <div class="stat-growth">
+                <span class="growth-text positive">+2%</span>
+                <img src="../../assets/icons/ArrowRise-s-up.svg" />
+              </div>
+            </div>
+            <div class="stat-item">
+              <p class="stat-label">Expense</p>
+              <p class="stat-value negative">Rp.100.000</p>
+              <div class="stat-growth">
+                <span class="growth-text negative">+5%</span>
+                <img src="../../assets/icons/ArrowRise-s.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-fast-service">
+          <div class="mobile-balance-info">
+            <p class="mobile-balance-label">Balance</p>
+            <p class="money">Rp. 500.000</p>
+          </div>
+          <div class="fast-service-content">
+            <h2 class="fast-service-title">Fast Service</h2>
+            <div class="fast-service-actions">
+              <div class="service-action">
+                <button class="btn-service btn-blue">
+                  <img src="../../assets/icons/u_money-insert-white.svg" />
+                </button>
+                <span>Top Up</span>
+              </div>
+              <div class="service-action">
+                <button class="btn-service btn-blue">
+                  <img src="../../assets/icons/Send-white.svg" />
+                </button>
+                <span>Transfer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-bottom">
+        <div class="card-financial-chart">
+          <div class="top-financial-chart">
+            <h2>Financial Chart</h2>
+            <div class="chart-filters">
+              <select name="days" class="income-chart-sortbytime">
+                <option value="7days">7 Days</option>
+                <option value="30days">30 Days</option>
+              </select>
+              <select name="type" class="income-chart-sortbytime">
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+              </select>
+            </div>
+          </div>
+          <div class="chart-container">
+            <img
+              src="../../assets/images/financial-chart.png"
+              alt="Financial Chart"
+            />
+          </div>
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="legend-dot income"></span>
+              <span>Income</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot expense"></span>
+              <span>Expense</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-transaction-history">
+          <div class="top-transaction-history">
+            <h2>Transaction History</h2>
+            <button class="btn-see-all">See All</button>
+          </div>
+          <ul class="transaction-list">
+            <li class="card-transaction">
+              <div class="profile-picture-container">
+                <img src="../../assets/images/dummy-user2.png" />
+              </div>
+              <div class="name-info">
+                <h3 class="username-transaction">Robert Fox</h3>
+                <p class="type-transaction">Transfer</p>
+              </div>
+              <p class="amount positive">+Rp50.000</p>
+            </li>
+
+            <li class="card-transaction">
+              <div class="profile-picture-container">
+                <img src="../../assets/images/dummy-user2.png" />
+              </div>
+              <div class="name-info">
+                <h3 class="username-transaction">Floyd Miles</h3>
+                <p class="type-transaction">Send</p>
+              </div>
+              <p class="amount negative">-Rp50.000</p>
+            </li>
+
+            <li class="card-transaction">
+              <div class="profile-picture-container">
+                <img src="../../assets/images/dummy-user2.png" />
+              </div>
+              <div class="name-info">
+                <h3 class="username-transaction">Ujang</h3>
+                <p class="type-transaction">Send</p>
+              </div>
+              <p class="amount negative">-Rp50.000</p>
+            </li>
+
+            <li class="card-transaction">
+              <div class="profile-picture-container">
+                <img src="../../assets/images/dummy-user2.png" />
+              </div>
+              <div class="name-info">
+                <h3 class="username-transaction">Robert Fox</h3>
+                <p class="type-transaction">Transfer</p>
+              </div>
+              <p class="amount positive">+Rp50.000</p>
+            </li>
+
+            <li class="card-transaction">
+              <div class="profile-picture-container">
+                <img src="../../assets/images/dummy-user2.png" />
+              </div>
+              <div class="name-info">
+                <h3 class="username-transaction">Floyd Miles</h3>
+                <p class="type-transaction">Send</p>
+              </div>
+              <p class="amount negative">-Rp50.000</p>
+            </li>
+
+            <li class="card-transaction">
+              <div class="profile-picture-container">
+                <img src="../../assets/images/dummy-user2.png" />
+              </div>
+              <div class="name-info">
+                <h3 class="username-transaction">Ujang</h3>
+                <p class="type-transaction">Send</p>
+              </div>
+              <p class="amount negative">-Rp50.000</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
