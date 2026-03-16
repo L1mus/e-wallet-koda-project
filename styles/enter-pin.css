@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-columns: 45fr 55f;
+  grid-template-columns: 45fr 55fr;
   margin: 0;
   padding: 0;
   background-color: #3868fd;
