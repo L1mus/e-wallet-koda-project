@@ -50,6 +50,12 @@ p {
   text-align: left;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 main > p:last-child {
   font-weight: 400;
   color: #4f5665;
@@ -122,4 +128,20 @@ main > p:last-child {
 
 .text-login > a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    background-color: none;
+  }
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100vh;
+    gap: 12px;
+  }
 }

@@ -175,6 +175,11 @@ body {
   outline: none;
 }
 
+.container-input-auth:has(input:focus) {
+  border-color: var(--clr-font-blue);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
 .btn-blue {
   background-color: var(--clr-font-blue);
   color: var(--clr-font-white);

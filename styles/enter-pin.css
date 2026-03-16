@@ -131,3 +131,31 @@ main > p:last-child {
 .text-reset > a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #7b9bff00 0%, #3868fdde 87%);
+    background: #3868fdde;
+    padding: 12px;
+  }
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: clamp(32px, 5vw, 60px) clamp(24px, 5vw, 50px);
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
