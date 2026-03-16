@@ -1,8 +1,6 @@
 body {
   display: grid;
   grid-template-columns: 45fr 55fr;
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0;
   background-color: #3868fd;
@@ -21,7 +19,6 @@ body {
   justify-content: center;
   background-color: #ffffff;
   box-shadow: 8px 0 32px rgba(0, 0, 0, 0.18);
-  overflow-y: auto;
 }
 
 .right-side {
