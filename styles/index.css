@@ -391,7 +391,6 @@ footer {
     gap: 52px;
     padding-bottom: 55px;
     border-bottom: 1px solid white;
-    flex-wrap: wrap;
 
     .container-title-footer {
       display: flex;

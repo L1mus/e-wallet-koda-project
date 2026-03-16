@@ -234,7 +234,6 @@ main {
     grid-area: content;
     padding: 24px;
     padding-bottom: 24px;
-    overflow-y: auto;
     height: calc(100vh - 64px);
   }
 }
