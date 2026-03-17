@@ -56,21 +56,6 @@
 :root {
   --ff-montserrat: "Montserrat", sans-serif;
   --ff-nunitosans: "NunitoSans", sans-serif;
-  --fs-title: 20px;
-  --lh-title: 100%;
-  --ls-title: 0%;
-  --fs-base: 16px;
-  --lh-base: 166%;
-  --ls-base: 0%;
-  --fs-heading-1: 30px;
-  --lh-heading-1: 100%;
-  --ls-heading-1: 0%;
-  --fs-placeholder-v1: 12px;
-  --lh-placeholder-v1: 100%;
-  --ls-placeholder-v1: 0.75px;
-  --fs-placeholder-v2: 14px;
-  --lh-placeholder-v2: 20px;
-  --ls-placeholder-v2: 0%;
   --clr-primary-v1: #3969fd;
   --clr-secondary: #ffffff;
   --clr-primary-v2: radial-gradient(circle, #7b9bff00 0%, #3868fdde 87%);
@@ -79,6 +64,28 @@
   --clr-font-grey: #4f5665;
   --clr-font-black: #0b132a;
   --clr-font-red: #d00000;
+  --clr-font-blackgrey: #3a3d42;
+  --clr-font-green: #1ec15f;
+}
+
+.font-clr-blue {
+  color: var(--clr-font-blue);
+}
+
+.font-clr-white {
+  color: var(--clr-font-white);
+}
+
+.font-clr-black {
+  color: var(--clr-font-black);
+}
+
+.font-clr-blackgray {
+  color: var(--clr-font-blackgray);
+}
+
+.font-clr-red {
+  color: var(--clr-font-red);
 }
 
 body {
@@ -89,42 +96,179 @@ body {
   font-weight: 400;
 }
 
-.title {
-  font-size: var(--fs-title);
-  line-height: var(--lh-title);
-  letter-spacing: var(--ls-title);
-  color: var(--clr-font-blue);
+.bg-primary {
+  background-color: var(--clr-primary-v1);
 }
+
+.bg-secondary {
+  background-color: var(--clr-secondary);
+}
+
+.bg-radial-gradient {
+  background-color: var(--clr-primary-v2);
+}
+
+.text-v1 {
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+.text-v2 {
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+.text-v3 {
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+.text-v4 {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+.text-v4 {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+.title {
+  font-family: var(--ff-nunitosans);
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 500;
+}
+
 .heading-1 {
-  font-size: var(--fs-heading-1);
-  line-height: var(--lh-heading-1);
-  letter-spacing: var(--ls-heading-1);
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: var(--clr-font-black);
 }
 
-.base {
-  font-size: var(--fs-base);
-  line-height: var(--lh-base);
-  letter-spacing: var(--ls-base);
-  color: var(--clr-font-grey);
+.heading-2 {
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 500;
 }
 
+.heading-3 {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 700;
+}
+
+.heading-3-v2 {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-dashboard {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+.text-dashboard-semibold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+.text-dashboardv2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+.text-dashboardv3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 10px;
+}
+
+.text-dashboardv4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-dashboardv4-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.text-dashboardv5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.text-dashboardv6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0;
+}
+
+.text-dashboardv7 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.text-dashboardv8 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
 .placeholder-v1 {
   font-family: var(--ff-montserrat);
-  font-size: var(--fs-placeholder-v1);
-  line-height: var(--lh-placeholder-v1);
-  letter-spacing: var(--ls-placeholder-v1);
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.75px;
   font-weight: 400;
   color: var(--clr-font-grey);
 }
 
 .placeholder-v2 {
-  font-family: var(--ff-montserrat);
-  font-size: var(--fs-placeholder-v2);
-  line-height: var(--lh-placeholder-v2);
-  letter-spacing: var(--ls-placeholder-v2);
+  font-family: 14px;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
   font-weight: 500;
   color: var(--clr-font-grey);
+}
+
+.border-input {
+  border: 1px solid #dedede;
 }
 
 .container-auth {
