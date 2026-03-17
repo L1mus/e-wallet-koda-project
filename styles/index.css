@@ -104,7 +104,7 @@ header {
   background-color: #e8e8e84d;
   width: 100%;
   margin: 0 auto;
-  height: 80px;
+  height: auto;
 }
 
 .about {
@@ -473,6 +473,7 @@ button {
   body {
     width: 100%;
   }
+
   .container-btn-header {
     display: none;
   }
@@ -487,5 +488,32 @@ button {
   .brands {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-side-about {
+    flex-direction: column;
+  }
+
+  .feature {
+    flex-direction: column;
+    background:
+      url(../assets/images/bg-section-feature-top.png),
+      url(../assets/images/bg-section-feature-bottom.png);
+  }
+  .right-side-feature {
+    margin: 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .top-display-footer {
+    flex-direction: column;
   }
 }
