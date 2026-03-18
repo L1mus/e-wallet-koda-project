@@ -97,7 +97,7 @@ body {
 }
 
 .bg-primary {
-  background-color: var(--clr-primary-v1);
+  background-color: var(--clr-font-blue);
 }
 
 .bg-secondary {
@@ -182,14 +182,14 @@ body {
 
 .text-dashboard {
   font-weight: 400;
-  font-size: 16px;
+  font-size: clamp(0.625rem, 0.1563rem + 1.5vw, 1rem);
   line-height: 24px;
   letter-spacing: -0.6%;
 }
 
 .text-dashboard-semibold {
   font-weight: 600;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.4375xrem + 1vw, 1rem);
   line-height: 24px;
   letter-spacing: -0.6%;
 }

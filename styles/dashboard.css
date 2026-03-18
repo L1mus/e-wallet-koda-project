@@ -1,11 +1,120 @@
-.income-chart-picture {
-  width: 100%;
-  height: auto;
-  display: block;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
+main {
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .information-balance {
+    display: flex;
+    justify-content: center;
+    .balance-container {
+      position: relative;
+      top: 40px;
+      border-radius: 24px;
+      padding: 28px 21px;
+      background: bottom no-repeat
+        url(../assets/images/backgrund-info-balance.png);
+      background-color: white;
+      flex-basis: 3;
+      flex-shrink: 2;
+      height: auto;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      justify-content: center;
+      .card-balance {
+        display: flex;
+        flex-direction: column;
+        .top-card {
+          img {
+            display: none;
+          }
+          p {
+            font-weight: 500;
+          }
+        }
+      }
+      .balance-growth {
+        display: flex;
+      }
+    }
+  }
+
+  .fast-service {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    h1 {
+      display: none;
+    }
+    button {
+      width: 150px;
+      border-radius: 6px;
+      padding: 4px 12px 4px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  .income-chart {
+    .top-income-chart {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      select {
+        background-color: #f1f1f1;
+        padding: 10px;
+        border: none;
+      }
+    }
+    .income-chart-picture {
+      width: 100%;
+      height: auto;
+      display: block;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+
+  .transaction-history {
+    margin: 20px;
+    .top-transaction-history {
+      display: flex;
+      justify-content: space-between;
+      button {
+        background-color: transparent;
+        border: none;
+      }
+    }
+    .container-transaction-history {
+      .transaction-list {
+        .card-transaction {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          div {
+            display: flex;
+            .profile-picture-container {
+              width: 56px;
+              height: 56px;
+              border-radius: 10px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
