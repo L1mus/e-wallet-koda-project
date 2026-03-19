@@ -10,6 +10,7 @@ main {
   .information-balance {
     display: flex;
     justify-content: center;
+    background-color: #2948ff;
     .balance-container {
       position: relative;
       top: 40px;
@@ -88,33 +89,300 @@ main {
 
   .transaction-history {
     margin: 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: clamp(16px, 3vw, 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     .top-transaction-history {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       button {
         background-color: transparent;
         border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: opacity 0.2s ease;
+        &:hover {
+          opacity: 0.7;
+          transform: none;
+        }
       }
     }
     .container-transaction-history {
       .transaction-list {
         .card-transaction {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          border-radius: 10px;
+          margin-top: 12px;
+          .profile-transaction-history {
             display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+            flex-shrink: 0;
             .profile-picture-container {
               width: 56px;
               height: 56px;
               border-radius: 10px;
+              overflow: hidden;
               img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
               }
+            }
+            .name-info {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              min-width: 0;
+
+              .username-transaction {
+                font-size: 14px;
+                font-weight: 600;
+                color: #0b132a;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+
+          .amount {
+            font-size: 14px;
+            font-weight: 600;
+            flex-shrink: 0;
+
+            &.positive {
+              color: #1ec15f;
+            }
+            &.negative {
+              color: #d00000;
             }
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas:
+      "balance      history"
+      "fastservice  history"
+      "chart        history";
+    gap: 20px;
+    overflow: hidden;
+    padding: 39px;
+
+    .information-balance {
+      grid-area: balance;
+    }
+    .fast-service {
+      grid-area: fastservice;
+    }
+    .income-chart {
+      grid-area: chart;
+    }
+    .transaction-history {
+      grid-area: history;
+      overflow-y: auto;
+    }
+
+    .information-balance {
+      background-color: transparent;
+      background: none;
+      justify-content: stretch;
+      align-items: stretch;
+
+      .balance-container {
+        position: static;
+        top: unset;
+        border-radius: 0;
+        padding: 0;
+        background: none;
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: stretch;
+      }
+
+      .card-balance {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background-color: #ffffff;
+        border: 1px solid #e8e8e8;
+        border-radius: 12px;
+        padding: 16px 20px;
+
+        .top-card {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 4px;
+
+          img {
+            display: block !important;
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+          }
+
+          p {
+            font-size: 13px;
+            font-weight: 500;
+            color: #6b7280;
+            margin: 0;
+          }
+        }
+
+        .money {
+          font-size: clamp(18px, 2vw, 24px);
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .balance-growth {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          flex-wrap: wrap;
+
+          p {
+            font-size: 12px;
+            margin: 0;
+          }
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+
+    .fast-service {
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 14px 20px;
+      background-color: #ffffff;
+
+      h1 {
+        display: block;
+        margin: 0;
+        white-space: nowrap;
+      }
+
+      button:first-of-type {
+        margin-left: auto;
+      }
+
+      button {
+        flex: none;
+        width: auto;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+      }
+    }
+
+    .income-chart {
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      overflow: hidden;
+
+      .top-income-chart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 16px 20px;
+        flex-shrink: 0;
+        border-bottom: 1px solid #f3f4f6;
+
+        h1 {
+          font-size: 14px;
+          font-weight: 700;
+          margin: 0;
+          color: #0b132a;
+        }
+
+        div {
+          display: flex;
+          gap: 8px;
+        }
+
+        select {
+          padding: 7px 32px 7px 12px;
+          border: 1px solid #e8e8e8;
+          border-radius: 8px;
+          font-size: 13px;
+          font-weight: 500;
+          color: #374151;
+          cursor: pointer;
+          transition:
+            border-color 0.15s ease,
+            background-color 0.15s ease;
+
+          &:hover {
+            border-color: #2948ff;
+            background-color: #f0f3ff;
+          }
+
+          &:focus {
+            outline: none;
+            border-color: #2948ff;
+            box-shadow: 0 0 0 3px rgba(41, 72, 255, 0.1);
+          }
+        }
+      }
+
+      .income-chart-picture {
+        flex: 1;
+        min-height: 0;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          display: block;
+        }
+      }
+    }
+
+    .transaction-history {
+      margin: 0;
+      scrollbar-width: thin;
+      scrollbar-color: #e8e8e8 transparent;
     }
   }
 }

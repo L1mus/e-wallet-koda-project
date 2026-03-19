@@ -70,7 +70,7 @@
     </aside>
 
     <main>
-      <section class="information-balance bg-primary">
+      <section class="information-balance">
         <div class="balance-container bg-secondary">
           <div class="card-balance text-dashboard">
             <div class="top-card">
@@ -81,12 +81,12 @@
             <div class="balance-growth text-dashboard">
               <p>+2%</p>
               <img src="../../assets/icons/ArrowRise-s-up.svg" />
-              <p>3 Days Ago</p>
+              <p class="font-clr-blackgray">3 Days Ago</p>
             </div>
           </div>
           <div class="card-balance text-dashboard">
             <div class="top-card">
-              <img src="../../assets/icons/balance.svg" />
+              <img src="../../assets/icons/u_money-withdraw.svg" />
               <p>Income</p>
             </div>
             <p class="money text-dashboard-semibold">Rp.2.120.000</p>
@@ -97,19 +97,19 @@
           </div>
           <div class="card-balance text-dashboard">
             <div class="top-card">
-              <img src="../../assets/icons/balance.svg" />
+              <img src="../../assets/icons/u_money-withdraw-rotate.svg" />
               <p>Expenses</p>
             </div>
             <p class="money text-dashboard-semibold">Rp.200.000</p>
             <div class="balance-growth">
-              <p>-5.06%</p>
+              <p class="font-clr-red">-5.06%</p>
               <img src="../../assets/icons/ArrowRise-s.svg" />
             </div>
           </div>
         </div>
       </section>
       <section class="fast-service">
-        <h1>Fast Service</h1>
+        <h1 class="text-dashboard-semibold">Fast Service</h1>
         <button class="btn-blue text-dashboard-semibold">
           <img src="../../assets/icons/u_money-insert-white.svg" />Top-Up
         </button>
@@ -119,7 +119,7 @@
       </section>
       <section class="income-chart text-dashboard-semibold">
         <div class="top-income-chart">
-          <h1>Income Chart</h1>
+          <h1 class="text-dashboard-semibold">Income Chart</h1>
           <div>
             <select name="days" id="income-chart-sortbytime">
               <option value="7 days">7 Days</option>
@@ -141,13 +141,25 @@
         <div class="container-transaction-history">
           <ul class="transaction-list">
             <li class="card-transaction">
-              <div>
+              <div class="profile-transaction-history">
                 <div class="profile-picture-container">
                   <img src="../../assets/images/dummy-user2.png" />
                 </div>
                 <div class="name-info">
                   <h2 class="username-transaction">Robert-Fox</h2>
-                  <p class="type-transaction">trashfer</p>
+                  <p class="type-transaction text-dashboard">trashfer</p>
+                </div>
+              </div>
+              <p class="amount positive">+Rp50.000</p>
+            </li>
+            <li class="card-transaction">
+              <div class="profile-transaction-history">
+                <div class="profile-picture-container">
+                  <img src="../../assets/images/dummy-user2.png" />
+                </div>
+                <div class="name-info">
+                  <h2 class="username-transaction">Robert-Fox</h2>
+                  <p class="type-transaction text-dashboard">trashfer</p>
                 </div>
               </div>
               <p class="amount positive">+Rp50.000</p>
