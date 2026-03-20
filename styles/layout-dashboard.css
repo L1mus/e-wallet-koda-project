@@ -89,6 +89,16 @@ body {
         height: 24px;
       }
     }
+    .nav-item a {
+      display: flex;
+      flex-direction: inherit;
+      align-items: inherit;
+      justify-content: inherit;
+      gap: inherit;
+      width: 100%;
+      text-decoration: none;
+      color: inherit;
+    }
     .active {
       color: #2948ff;
     }
@@ -210,6 +220,7 @@ main {
         gap: 4px;
         height: auto;
         padding: 0;
+        align-items: start;
         .nav-item {
           flex: none;
           flex-direction: row;
