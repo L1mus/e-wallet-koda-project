@@ -6,13 +6,14 @@
     <title>Transfer</title>
     <link rel="stylesheet" href="../../styles/global.css" />
     <link rel="stylesheet" href="../../styles/layout-dashboard.css" />
+    <link rel="stylesheet" href="../../styles/layout-table.css" />
     <link rel="stylesheet" href="../../styles/transfer.css" />
   </head>
   <body>
     <header class="header-dekstop">
       <div>
         <div class="title">
-          <img src="../../assets/icons/logo.svg" alt="" />
+          <img src="../../assets/icons/logo.svg" alt="E-Wallet Logo" />
           <span>E-Wallet</span>
         </div>
       </div>
@@ -20,21 +21,21 @@
         <div class="profile-container">
           <h1 class="username">Ghaluh Wizard</h1>
           <div class="avatar-image">
-            <img src="../../assets/images/dummy-profile-picture.png" />
+            <img
+              src="../../assets/images/dummy-profile-picture.png"
+              alt="Profile Picture"
+            />
           </div>
         </div>
         <button class="btn-dropdown">
-          <img src="../../assets/icons/arrow-dropdown.svg" />
+          <img src="../../assets/icons/arrow-dropdown.svg" alt="Dropdown" />
         </button>
       </div>
     </header>
+
     <div class="header-mobile">
-      <div class="avatar-image">
-        <img src="../../assets/images/dummy-profile-picture.png" />
-      </div>
       <div>
-        <p>Hello,</p>
-        <h1 class="username">Ghaluh Wizard</h1>
+        <p>Transfer</p>
       </div>
     </div>
 
@@ -42,28 +43,40 @@
       <nav class="navigation-bar">
         <ul>
           <li class="nav-item">
-            <img src="../../assets/icons/dashboard-two.svg" alt="" />
-            <span>Dashboard</span>
+            <a href="./mainv1.html">
+              <img src="../../assets/icons/dashboard-two.svg" alt="Dashboard" />
+              <span>Dashboard</span>
+            </a>
           </li>
           <li class="nav-item active">
-            <img src="../../assets/icons/Send.svg" alt="" />
-            <span>Transfer</span>
+            <a href="./transfer.html">
+              <img src="../../assets/icons/Send.svg" alt="Transfer" />
+              <span>Transfer</span>
+            </a>
           </li>
           <li class="nav-item">
-            <img src="../../assets/icons/history.svg" alt="" />
-            <span>History</span>
+            <a href="./history-transaction.html">
+              <img src="../../assets/icons/history.svg" alt="History" />
+              <span>History</span>
+            </a>
           </li>
           <li class="nav-item">
-            <img src="../../assets/icons/Upload.svg" alt="" />
-            <span>Top Up</span>
+            <a href="./top-up.html">
+              <img src="../../assets/icons/Upload.svg" alt="Top Up" />
+              <span>Top Up</span>
+            </a>
           </li>
           <li class="nav-item">
-            <img src="../../assets/icons/2 User.svg" alt="" />
-            <span>Profile</span>
+            <a href="./edit-profile.html">
+              <img src="../../assets/icons/2 User.svg" alt="Profile" />
+              <span>Profile</span>
+            </a>
           </li>
           <li class="nav-item logout">
-            <img src="../../assets/icons/Log Out.svg" alt="" />
-            <span>Log out</span>
+            <a href="../auth/login.html">
+              <img src="../../assets/icons/Log Out.svg" alt="Keluar" />
+              <span>Keluar</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -72,7 +85,7 @@
     <main>
       <section class="transfer-wrapper">
         <div class="transfer-page-title">
-          <img src="../../assets/icons/Send-blue.svg" />
+          <img src="../../assets/icons/Send-blue.svg" alt="Transfer Icon" />
           <h2>Transfer Money</h2>
         </div>
 
@@ -93,35 +106,264 @@
           </div>
         </div>
 
-        <div class="card-find-people">
-          <div class="find-people-header">
-            <div class="find-people-info">
-              <h3>Find People</h3>
-              <p class="result-count">8 Result Found For Ghaluh</p>
+        <div class="card-table">
+          <div class="table-header">
+            <div class="table-header-top">
+              <h3 class="table-title">Find People</h3>
+              <p class="table-subtitle">8 Result Found For Ghaluh</p>
             </div>
             <div class="container-input-search">
               <input
                 class="input-search"
                 type="text"
                 placeholder="Enter Number Or Full Name"
+                aria-label="Search people by number or name"
               />
-              <img src="../../assets/icons/search.svg" />
+              <img src="../../assets/icons/search.svg" alt="Search" />
             </div>
           </div>
-          <ul class="people-list">
-            <li class="people-item">
-              <div class="people-avatar">
-                <img src="../../assets/images/dummy-user1.png" />
-              </div>
-              <div class="people-info">
-                <h3 class="people-name">Ghaluh 1</h3>
-                <p class="people-phone">(239) 555-0108</p>
-              </div>
-              <button class="btn-favorite">
-                <img src="../../assets/icons/star.svg" />
-              </button>
-            </li>
-          </ul>
+
+          <table
+            class="data-table"
+            role="table"
+            aria-label="Find people for transfer"
+          >
+            <thead>
+              <tr>
+                <th class="col-avatar" scope="col"></th>
+                <th class="col-name" scope="col">Name</th>
+                <th class="col-phone" scope="col">Phone Number</th>
+                <th class="col-action" scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+              <tr onclick="window.location.href = './detail-transfer.html'">
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">(239) 555-0108</span>
+                  </div>
+                </td>
+                <td class="col-phone">(239) 555-0108</td>
+                <td class="col-action">
+                  <button
+                    class="btn-table-action btn-favorite"
+                    type="button"
+                    onclick="event.stopPropagation()"
+                  >
+                    <img src="../../assets/icons/star.svg" alt="Favorite" />
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="table-pagination">
+            <p class="pagination-info">Show 8 People of 100 People</p>
+            <nav class="pagination-nav">
+              <button class="btn-page btn-page-prev" type="button">Prev</button>
+              <button class="btn-page btn-page-active" type="button">1</button>
+              <button class="btn-page" type="button">2</button>
+              <button class="btn-page" type="button">3</button>
+              <button class="btn-page" type="button">4</button>
+              <button class="btn-page" type="button">5</button>
+              <button class="btn-page" type="button">6</button>
+              <button class="btn-page" type="button">7</button>
+              <button class="btn-page" type="button">8</button>
+              <button class="btn-page" type="button">9</button>
+              <button class="btn-page btn-page-next" type="button">Next</button>
+            </nav>
+          </div>
         </div>
       </section>
     </main>
