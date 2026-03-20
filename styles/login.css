@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #3868fd;
+  min-height: 100vh;
 }
 
 .left-side {
@@ -149,6 +150,7 @@ main > p:last-child {
   body {
     grid-template-columns: 1fr;
     background-color: none;
+    min-height: 100vh;
   }
   .right-side {
     display: none;
