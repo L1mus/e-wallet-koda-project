@@ -1,0 +1,145 @@
+.history-wrapper .col-avatar {
+  display: none;
+}
+
+.history-wrapper .col-action {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .history-wrapper .col-avatar {
+    display: table-cell;
+  }
+
+  .history-wrapper .col-action {
+    display: table-cell;
+  }
+}
+
+.history-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history-page-title {
+  display: none;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+    color: #0b132a;
+    margin: 0;
+  }
+}
+
+.table-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.pagination-info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4f5665;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.pagination-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-page {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 6px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4f5665;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    background-color: #f0f3ff;
+    border-color: #2948ff;
+    color: #2948ff;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.btn-page-active {
+  background-color: #2948ff;
+  border-color: #2948ff;
+  color: #ffffff;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #1e3ae0;
+    border-color: #1e3ae0;
+    color: #ffffff;
+  }
+}
+
+.btn-page-prev,
+.btn-page-next {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0b132a;
+  padding: 0 12px;
+  min-width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .history-page-title {
+    display: flex;
+  }
+
+  .table-pagination {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
+
+  .pagination-info {
+    font-size: 13px;
+  }
+
+  .btn-page {
+    min-width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .btn-page-prev,
+  .btn-page-next {
+    font-size: 13px;
+    padding: 0 14px;
+  }
+}

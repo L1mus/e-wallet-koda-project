@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History Transaction</title>
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/layout-dashboard.css" />
+    <link rel="stylesheet" href="../../styles/layout-table.css" />
+    <link rel="stylesheet" href="../../styles/history-transaction.css" />
+  </head>
+  <body>
+    <header class="header-dekstop">
+      <div>
+        <div class="title">
+          <img src="../../assets/icons/logo.svg" alt="E-Wallet Logo" />
+          <span>E-Wallet</span>
+        </div>
+      </div>
+      <div class="container-profile-dropdown">
+        <div class="profile-container">
+          <h1 class="username">Ghaluh Wizard</h1>
+          <div class="avatar-image">
+            <img
+              src="../../assets/images/dummy-profile-picture.png"
+              alt="Profile Picture"
+            />
+          </div>
+        </div>
+        <button class="btn-dropdown">
+          <img src="../../assets/icons/arrow-dropdown.svg" alt="Dropdown" />
+        </button>
+      </div>
+    </header>
+
+    <div class="header-mobile text-dashboardv4">
+      <div>
+        <p>History Transaction</p>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <nav class="navigation-bar">
+        <ul>
+          <li class="nav-item">
+            <a href="./mainv1.html">
+              <img src="../../assets/icons/dashboard-two.svg" alt="Dashboard" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./transfer.html">
+              <img src="../../assets/icons/Send.svg" alt="Transfer" />
+              <span>Transfer</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="./history-transaction.html">
+              <img src="../../assets/icons/history.svg" alt="History" />
+              <span>History</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./top-up.html">
+              <img src="../../assets/icons/Upload.svg" alt="Top Up" />
+              <span>Top Up</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./edit-profile.html">
+              <img src="../../assets/icons/2 User.svg" alt="Profile" />
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="nav-item logout">
+            <a href="../auth/login.html">
+              <img src="../../assets/icons/Log Out.svg" alt="Keluar" />
+              <span>Keluar</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="history-wrapper">
+        <div class="history-page-title">
+          <img src="../../assets/icons/history-blue.svg" alt="History Icon" />
+          <h2>History Transaction</h2>
+        </div>
+
+        <div class="card-table">
+          <div class="table-header">
+            <div class="table-header-top">
+              <h3 class="table-title">Find Transaction</h3>
+            </div>
+            <div class="container-input-search">
+              <input
+                class="input-search"
+                type="text"
+                placeholder="Enter Number Or Full Name"
+              />
+              <img src="../../assets/icons/search.svg" alt="Search" />
+            </div>
+          </div>
+
+          <table class="data-table" role="table">
+            <thead>
+              <tr>
+                <th class="col-avatar" scope="col"></th>
+                <th class="col-name" scope="col">Name</th>
+                <th class="col-phone" scope="col">Phone Number</th>
+                <th class="col-amount" scope="col">Amount</th>
+                <th class="col-action" scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">082116304337</span>
+                  </div>
+                </td>
+                <td class="col-phone">082116304337</td>
+                <td class="col-amount">
+                  <span class="amount positive">Rp.50.000</span>
+                </td>
+                <td class="col-action">
+                  <button class="btn-table-action btn-delete" type="button">
+                    <img src="../../assets/icons/Trash.svg" alt="Delete" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">082116304337</span>
+                  </div>
+                </td>
+                <td class="col-phone">082116304337</td>
+                <td class="col-amount">
+                  <span class="amount positive">Rp.50.000</span>
+                </td>
+                <td class="col-action">
+                  <button class="btn-table-action btn-delete" type="button">
+                    <img src="../../assets/icons/Trash.svg" alt="Delete" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">082116304337</span>
+                  </div>
+                </td>
+                <td class="col-phone">082116304337</td>
+                <td class="col-amount">
+                  <span class="amount positive">Rp.50.000</span>
+                </td>
+                <td class="col-action">
+                  <button class="btn-table-action btn-delete" type="button">
+                    <img src="../../assets/icons/Trash.svg" alt="Delete" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">082116304337</span>
+                  </div>
+                </td>
+                <td class="col-phone">082116304337</td>
+                <td class="col-amount">
+                  <span class="amount positive">Rp.50.000</span>
+                </td>
+                <td class="col-action">
+                  <button class="btn-table-action btn-delete" type="button">
+                    <img src="../../assets/icons/Trash.svg" alt="Delete" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">082116304337</span>
+                  </div>
+                </td>
+                <td class="col-phone">082116304337</td>
+                <td class="col-amount">
+                  <span class="amount positive">Rp.50.000</span>
+                </td>
+                <td class="col-action">
+                  <button class="btn-table-action btn-delete" type="button">
+                    <img src="../../assets/icons/Trash.svg" alt="Delete" />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-avatar">
+                  <div class="avatar-cell">
+                    <img
+                      src="../../assets/images/dummy-user2.png"
+                      alt="Ghaluh 1"
+                    />
+                  </div>
+                </td>
+                <td class="col-name">
+                  <div class="name-cell">
+                    <span class="name-text">Ghaluh 1</span>
+                    <span class="phone-inline">082116304337</span>
+                  </div>
+                </td>
+                <td class="col-phone">082116304337</td>
+                <td class="col-amount">
+                  <span class="amount positive">Rp.50.000</span>
+                </td>
+                <td class="col-action">
+                  <button class="btn-table-action btn-delete" type="button">
+                    <img src="../../assets/icons/Trash.svg" alt="Delete" />
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="table-pagination">
+            <p class="pagination-info">Show 5 History of 100 History</p>
+            <nav class="pagination-nav">
+              <button class="btn-page btn-page-prev" type="button">Prev</button>
+              <button class="btn-page btn-page-active" type="button">1</button>
+              <button class="btn-page" type="button">2</button>
+              <button class="btn-page" type="button">3</button>
+              <button class="btn-page" type="button">4</button>
+              <button class="btn-page" type="button">5</button>
+              <button class="btn-page" type="button">6</button>
+              <button class="btn-page" type="button">7</button>
+              <button class="btn-page" type="button">8</button>
+              <button class="btn-page" type="button">9</button>
+              <button class="btn-page btn-page-next" type="button">Next</button>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
