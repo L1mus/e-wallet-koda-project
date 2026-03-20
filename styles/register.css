@@ -141,7 +141,6 @@ main > p:last-child {
   .left-side {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    height: 100vh;
     gap: 12px;
   }
 }
