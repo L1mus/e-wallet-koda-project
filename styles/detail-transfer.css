@@ -1,0 +1,272 @@
+.header-mobile {
+  justify-content: center;
+
+  .header-mobile-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+.card-set-nominal {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.set-nominal-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0b132a;
+  margin: 0;
+}
+
+.section-desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4f5665;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.people-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #f9fafb;
+  border: 1px solid #eeeff2;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.people-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.people-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.people-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b132a;
+  margin: 0;
+}
+
+.people-phone {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4f5665;
+  margin: 0;
+}
+
+.badge-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #2948ff;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px 4px 8px;
+  border-radius: 6px;
+  width: fit-content;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.btn-favorite-detail {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+
+  img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+    transition:
+      opacity 0.15s ease,
+      filter 0.15s ease;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  &:hover img {
+    opacity: 1;
+  }
+}
+
+.input-nominal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background-color: #ffffff;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:focus-within {
+    border-color: #2948ff;
+    box-shadow: 0 0 0 3px rgba(41, 72, 255, 0.08);
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    opacity: 0.45;
+  }
+
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: #0b132a;
+    background: transparent;
+    min-width: 0;
+
+    &::placeholder {
+      color: #4f5665;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+.input-notes {
+  width: 100%;
+  min-height: 160px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  color: #0b132a;
+  resize: vertical;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &::placeholder {
+    color: #4f5665;
+  }
+
+  &:focus {
+    border-color: #2948ff;
+    box-shadow: 0 0 0 3px rgba(41, 72, 255, 0.08);
+  }
+}
+
+.btn-submit-transfer {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set-nominal {
+    padding: 32px 36px;
+    gap: 32px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .section-desc {
+    font-size: 14px;
+  }
+
+  .people-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+  }
+
+  .people-name {
+    font-size: 15px;
+  }
+
+  .people-phone {
+    font-size: 14px;
+  }
+
+  .people-item {
+    padding: 16px 20px;
+  }
+
+  .input-nominal {
+    max-width: 480px;
+  }
+
+  .input-notes {
+    min-height: 200px;
+  }
+
+  .btn-submit-transfer {
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+  }
+}
